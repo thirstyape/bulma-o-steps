@@ -5,6 +5,10 @@ _feel free to open an issue or discussion about it!_
 
 # Steps component for Bulma
 
+[![npm](https://img.shields.io/npm/v/bulma-o-steps.svg)](https://www.npmjs.com/package/bulma-o-steps)
+[![npm](https://img.shields.io/npm/dm/bulma-o-steps.svg)](https://www.npmjs.com/package/bulma-o-steps)
+[![GPL-3.0](https://img.shields.io/github/license/octoshrimpy/bulma-o-steps)](https://github.com/octoshrimpy/bulma-o-steps/blob/master/LICENSE.md)
+
 This is an extension for the [Bulma CSS Framework](http://bulma.io).  
 
 It adds an in-depth `steps` component to track progress in multi-step forms or wizards.  
@@ -17,7 +21,7 @@ Original written by [aramvisser](https://github.com/aramvisser) over at [his ori
 [Usage & Examples](https://octoshrimpy.github.io/bulma-o-steps)
 
 I'm trying to keep this working with the latest available Bulma version.
-Currently tracking: **bulma v0.9.4**. Other versions _should_ work, but no promises.
+Currently tracking: **bulma v0.9.4**. Newer versions _should_ work, but no promises.
 
 ## Installation
 
@@ -27,10 +31,20 @@ Currently tracking: **bulma v0.9.4**. Other versions _should_ work, but no promi
 
 ### Manually
 
-#### SASS
+#### SASS - Same version of Bulma
+
+If you are running the same version of Bulma noted here, this is the preferred method to deploy this library.
 
 - Download the `bulma-steps.sass` file
 - Add `@import "bulma-steps.sass"` _after_ the `@import "bulma.sass"` statement in your own
+  stylesheet
+
+#### SASS - Newer version of Bulma
+
+If you are using a version of Bulma greater than the one noted here, there may be issues when importing `bulma-steps.sass` due to mismatching variables, functions, or files between the supplied copies of the Bulma utilities and the desired version of the Bulma utilities. The following may still have compilation errors, but will bypass using the supplied copies of the Bulma utilities.
+
+- Download the `index.sass` file
+- Add `@import "index.sass"` _after_ the `@import "bulma.sass"` statement in your own
   stylesheet
 
 #### CSS
