@@ -17,7 +17,7 @@ Original written by [aramvisser](https://github.com/aramvisser) over at [his ori
 [Usage & Examples](https://octoshrimpy.github.io/bulma-o-steps)
 
 I'm trying to keep this working with the latest available Bulma version.
-Currently tracking: **bulma v0.8.2**. Other versions _should_ work, but no promises.
+Currently tracking: **bulma v0.9.4**. Other versions _should_ work, but no promises.
 
 ## Installation
 
@@ -45,7 +45,7 @@ Currently tracking: **bulma v0.8.2**. Other versions _should_ work, but no promi
 Alternatively, you can include bulma and bulma-steps from a CDN.
 As of writing, these are the current CDNs for both:
 
-- bulma: https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css
+- bulma: https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css
 - bulma-steps: https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css
 
 ## Development
