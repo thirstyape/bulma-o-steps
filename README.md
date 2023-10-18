@@ -1,8 +1,3 @@
-# ⚠️ LOOKING FOR MAINTAINERS ⚠️
-
-_feel free to open an issue or discussion about it!_
-
-
 # Steps component for Bulma
 
 [![npm](https://img.shields.io/npm/v/bulma-o-steps.svg)](https://www.npmjs.com/package/bulma-o-steps)
