@@ -11,7 +11,13 @@ $steps-thin-divider-size: 1px !default
 $steps-thin-marker-size: .8em !default
 
 =steps-horizontal
-  +tablet
+  +tablet-only
+    &:not(.is-vertical):not(.is-vertical-tablet)
+      @content
+  +desktop-only
+    &:not(.is-vertical):not(.is-vertical-desktop)
+      @content
+  +widescreen
     &:not(.is-vertical)
       @content
   &.is-horizontal
@@ -23,6 +29,12 @@ $steps-thin-marker-size: .8em !default
       @content
   &.is-vertical
     @content
+  +tablet-only
+    &.is-vertical-tablet
+      @content
+  +desktop-only
+    &.is-vertical-desktop
+      @content
 
 =steps-all-segments
   &.steps .steps-segment
@@ -293,6 +305,7 @@ $steps-thin-marker-size: .8em !default
 .steps.is-hollow .steps-marker,
 .steps-marker.is-hollow
   border: $steps-hollow-border-size solid $steps-completed-color
+  background-color: $scheme-main
 
 .steps.is-hollow .is-active .steps-marker,
 .steps .is-active .steps-marker.is-hollow
